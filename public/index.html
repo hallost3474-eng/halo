@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zimmet Takip</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="ust">
+    <div class="logo">📦 Zimmet Takip</div>
+    <nav>
+      <a href="#/" data-sekme="ozet">Özet</a>
+      <a href="#/malzemeler" data-sekme="malzemeler">Malzemeler</a>
+      <a href="#/personeller" data-sekme="personeller">Personel</a>
+      <a href="#/zimmetler" data-sekme="zimmetler">Zimmetler</a>
+    </nav>
+  </header>
+
+  <main id="icerik"></main>
+
+  <dialog id="pencere">
+    <form method="dialog" id="pencereForm">
+      <h2 id="pencereBaslik"></h2>
+      <div id="pencereGovde"></div>
+      <p class="hata" id="pencereHata"></p>
+      <div class="dugmeler">
+        <button type="button" class="ikincil" id="pencereIptal">Vazgeç</button>
+        <button type="submit" id="pencereKaydet">Kaydet</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div id="bildirim" role="status"></div>
+  <div id="yazdirAlani"></div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
